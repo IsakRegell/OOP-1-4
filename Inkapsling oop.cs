@@ -1,6 +1,6 @@
 ﻿namespace Lektion_1_vecka_3
 {
-    public class Program
+    privet class Program
     {
         static void Main(string[] args)
         {
