@@ -8,7 +8,7 @@ public class Vehicle
 
     public virtual void StartMotor()
     {
-        Console.WriteLine("Vehicle motor start")
+        Console.WriteLine("Vehicle motor start");
     }
 
 }
@@ -17,11 +17,11 @@ public class Bil : Vehicle
 {
     public override void StartMotor()
     {
-        Console.WriteLine("Bil motor start")
+        Console.WriteLine("Bil motor start");
     }
 }
 
-public class Mototcykel : Vehicle
+public class Motorcykel : Vehicle
 {
     public override void StartMotor()
     {
