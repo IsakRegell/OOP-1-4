@@ -1,16 +1,29 @@
-﻿using Lektion_1_vecka_3;
-
-namespace InkapPrivate
+namespace Lektion_1_vecka_3
 {
-
-
-    internal class Program
+    public class Employee
     {
 
-        static void Main(string[] args)
+        private string name;
+
+
+
+        public Employee(string name)
         {
-            Employee employee = new Employee("Isak");
+            Name = name;
+        }
+
+
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+
         }
 
     }
 }
+
+
+
+
