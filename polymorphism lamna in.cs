@@ -1,20 +1,30 @@
-﻿namespace Polymorphism1
+namespace polymorphism
+    //Mainclass
+public class Vehicle
 {
-    internal class Program
+    public string Name;
+    public string Modell;
+    public int Yearmodell;
+
+    public virtual void StartMotor()
     {
-        static void Main(String[] args)
-        {
-            Veicle veicle = new Veicle();
-            veicle.StartMotor();
-
-            Bil bil = new Bil();
-            bil.StartMotor();
-
-            Motorcykel motorcykel = new Motorcykel();
-            motorcykel.StartMotor();
-        }
-
-
+        Console.WriteLine("Vehicle motor start")
     }
 
+}
+
+public class Bil : Vehicle
+{
+    public override void StartMotor()
+    {
+        Console.WriteLine("Bil motor start")
+    }
+}
+
+public class Mototcykel : Vehicle
+{
+    public override void StartMotor()
+    {
+        Console.WriteLine("Motorcykel motor start")
+    }
 }
